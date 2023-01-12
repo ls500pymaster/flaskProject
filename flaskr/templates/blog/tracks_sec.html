@@ -1,1 +1,18 @@
-<!doctype html><html>  <head>    <title>{{title}}</title>    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}" type="text/css"/>    <meta charset="utf-8">    <meta name="description" content={{description}}>  </head>  <br>    <div class="main">        <h1>{{title}}</h1>    {{ length_conversion }}        {% for row in rows %}            <p>Track:  <i>{{ row[0] }}</i> <b>|</b> Length: <i>{{ row[1]}} sec.</i></p>        {% endfor %}    </div>  </body></html>
+<!doctype html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="description" content={{description}}>
+  </head>
+  <br>
+    <div class="main">
+        <h1>{{title}}</h1>
+    {{ length_conversion }}
+        {% for row in rows %}
+            <p>Track:  <i>{{ row[0] }}</i> <b>|</b> Length: <i>{{ row[1]}} sec.</i></p>
+        {% endfor %}
+    </div>
+  </body>
+</html>

@@ -1,1 +1,22 @@
-<!DOCTYPE html><html lang="en"><head>    <title>User Generator</title>    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}" type="text/css"/>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Random User Generator</title></head><br><h2 style="text-align: center;">Random User Generator</h2><p class="center">    Random users:</p><br><div class='center' style="border: 5px solid green; padding: 10px; margin: 10px">    <div class='main'>        {% for i in new_list %}            <li>{{ i }}</li>        {% endfor %}    </div>    <br></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+</head>
+<br>
+<h2 style="text-align: center;">Random User Generator</h2>
+<p class="center">
+    Random users:
+</p>
+<br>
+<div class='center' style="border: 5px solid green; padding: 10px; margin: 10px">
+    <div class='main'>
+        {% for i in new_list %}
+            <li>{{ i }}</li>
+        {% endfor %}
+    </div>
+    <br>
+</html>
