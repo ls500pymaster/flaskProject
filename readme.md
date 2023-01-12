@@ -1,6 +1,6 @@
 ### Features
 
-**Terminal commands **
+**Terminal commands**
 
 Init empty db
 
