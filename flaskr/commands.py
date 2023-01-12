@@ -1,1 +1,0 @@
-import clickfrom flaskr.db import init_dbimport pandas as pd@click.command('insert-db')def insert_artists():    artists = pd.read_csv('top_tracks_of_2022_usa.csv')    artists.to_sql('artist', init_db(), if_exists='append', index=False)    click.echo('inserted into database.')
