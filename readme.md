@@ -1,7 +1,20 @@
 ### Features
 
-`flask --app flaskr init-db`  - init empty db
-`flask --app flaskr create` - init db with tracks
+**Terminal commands **
+
+Init empty db
+
+        flask --app flaskr init-db
+		
+		
+
+Init db with tracks from .csv file
+
+    flask --app flaskr create
+
+
+### PATH
+
 
 PATH: /names/ - total unic artists
 
@@ -24,9 +37,10 @@ PATH: /space/ - Count astronauts in real time
 
 ### CSV
 
-You need spotify account. Go to https://watsonbox.github.io/exportify/
-and export .csv file with tracks.
-Put your .csv file to flaskr directory.
+First of all you need [spotify](https://open.spotify.com "spotify") account. Next go to [https://watsonbox.github.io/exportify/](https://watsonbox.github.io/exportify/ "https://watsonbox.github.io/exportify/")
+and export .csv file with tracks. Put your .csv file to flaskr directory.
 
 You can change path and name of .csv file here:
-`/flaskr/db.py` at line 44
+
+
+    /flaskr/db.py at line 44
