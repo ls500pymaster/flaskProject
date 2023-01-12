@@ -1,1 +1,15 @@
-<!doctype html><html>  <head>    <title>{{title}}</title>    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/theme.css') }}" type="text/css"/>    <meta charset="utf-8">    <meta name="description" content={{description}}>  </head>  <body>    <div class="main">        <h1>{%  block title %}{% endblock %}</h1>    </div>  </body></html>
+<!doctype html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/theme.css') }}" type="text/css"/>
+    <meta charset="utf-8">
+    <meta name="description" content={{description}}>
+  </head>
+
+  <body>
+    <div class="main">
+        <h1>{%  block title %}{% endblock %}</h1>
+    </div>
+  </body>
+</html>
